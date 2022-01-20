@@ -14,7 +14,7 @@
    </head>
    <body>
       <script src="{{ url_for('static', filename='./js/script.js') }}"></script>
-      <script src="{{ url_for('static', filename='.js/fetch_html.js') }}"></script>
+      <script src="{{ url_for('static', filename='./js/fetch_html.js') }}"></script>
       <nav class="navbar">
          <div class="max-width">
             <div class="logo">
@@ -74,7 +74,7 @@
          <!-- landing over -->
          <!-- <div class="daddy"> -->
          <div class="buddy">
-            <div id="code_area">
+            <div id="code_area" class="pc-margin">
                 <!-- <center>
                     <h1>Sending WhatsApp Messages</h1>
                     <br>
@@ -103,7 +103,7 @@
                         <li><b>Message not getting delivered</b>: Check internet speed and increase wait_time to 30 or above CallTimeException - The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time.</li>
                     </ul>
                 </div> -->
-                {{code_To_insert | safe}}
+                {{code_to_insert|safe}}
             </div>
             <br><br>
             <div style="display:inline;">

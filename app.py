@@ -11,6 +11,6 @@ def hello():
 
 @app.route("/<function>")
 def render_function(function):
-    return render_template("code.html", code_to_insert=open(f"templates/{function}.html", encoding="utf-8").read())
+    return render_template("code.html", code_to_insert=open(f"templates/{function}.html", encoding="utf-8").read().replace("\n", ""))
 
 app.run("0.0.0.0", port=int(os.environ.get('PORT', 5000)))
