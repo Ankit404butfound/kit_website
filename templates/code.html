@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="{{ url_for('static', filename='./css/style_home.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='./css/style_code.css') }}">
       <link rel="stylesheet" href="{{ url_for('static', filename='./css/footer.css') }}">
       <script src="https://kit.fontawesome.com/a076d05399.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -14,6 +14,7 @@
    </head>
    <body>
       <script src="{{ url_for('static', filename='./js/script.js') }}"></script>
+      <script src="{{ url_for('static', filename='.js/fetch_html.js') }}"></script>
       <nav class="navbar">
          <div class="max-width">
             <div class="logo">
@@ -54,23 +55,86 @@
          <i class="fas fa-angle-up"></i>
       </div>
       <div class="main-container">
-         <div class="code-block" style="margin: -5em;">
+         <!-- <div class="buddy">
             <h1 >PyWhatKit</h1>
-            <p align="center">PyWhatKit is a Python library with various helpful features. It is an easy to use library which does not requires you to do some additional setup. Currently it has about 100k+ downloads and counting and we regularly update and fix any bug. The source code of this library can be found on GitHub, you are free update/add some features to it and open a Pull Request, we will review it and include that feature in the next update if the feature was found to be relavent and helpful.</p>
-            
-            <h1 style="margin-bottom: -4%;">Install using pip</h1>
-            <div class="blacky fix">
+            <p align="center"> A Python library with various helpful features. It is an easy to use library which does not requires you to do some additional setup. Currently it has about 200k+ downloads. The source code of this library can be found on GitHub. </p>
+            <br>
+            <h1>Install using pip</h1>
+            <div class="blacky">
                <div class="blackboard">
                   <h1 class="bd">
                      <code>pip install pywhatkit</code>
                   </h1>
                </div>
             </div>
-            <br><br>
-            <div align="center">
-               <button class="dive" onclick="location.href='code.html'">Learn PyWhatKit</button>
+            <div align="center" style="margin-top: 2em;">
+               <button class="dive" onclick="location.href='http://www.pywhatkit.com'">Learn PyWhatKit</button>
             </div>
-         </div>
+         </div> -->
+         <!-- landing over -->
+         <!-- <div class="daddy"> -->
+         <div class="buddy">
+            <div id="code_area">
+                <!-- <center>
+                    <h1>Sending WhatsApp Messages</h1>
+                    <br>
+                    <h2> Sending WhatsApp Message is very simple in PyWhatKit </h2>
+                </center>
+                <div style="margin-top: 7%;">
+                    <script src="embedder.js?target=https://github.com/Ankit404butfound/kit_website/blob/main/style.css&style=night-owl&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
+                </div>
+                <div class=parameter-container>
+                    <h2>The following parameters can be passed</h2>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><b>Phone_num</b> [string]<i> (required)</i> : Phone number of the person you want to send the message to.</li>
+                        <li><b>Message</b> [string]<i> (required)</i> : Message you want to send.</li>
+                        <li><b>Time_hour</b> [int]<i> (required)</i>: Hour of the day you want to send the message.</li>
+                        <li><b>Time_min</b> [int]<i> (required)</i>: Minute of the hour you want to send the message.</li>
+                        <li><b>Wait_time</b> [int: 15]<i> (optional)</i>: Time taken by WhatsApp Web to load.</li>
+                        <li><b>Tab_close</b> [bool: False]<i> (optional)</i>: Close the tab after sending message.</li>
+                        <li><b>Close_time</b> [int: 3]<i> (optional)</i>: Time after which tab shall be closed.</li>
+                    </ul>
+                    <br><br>
+                    <h2>The following are some common errors</h2>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><b>CountryCodeException</b>: Check if the phone number passed into the paramter has country code.</li>
+                        <li><b>Message not getting delivered</b>: Check internet speed and increase wait_time to 30 or above CallTimeException - The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time.</li>
+                    </ul>
+                </div> -->
+                {{code_To_insert | safe}}
+            </div>
+            <br><br>
+            <div style="display:inline;">
+                <button data-inline="true">Previous</button>
+            </div>
+            <div style="display:inline; float: right;">
+                <button data-inline="true" onclick="loadDoc()">Next</button>
+            </div>       
+          </div>
+         <!-- </div> -->
+         <!-- <div class="daddy">
+            <div class="container">
+              <div style="margin-bottom: 5%;">
+                <center>
+                  <br><br>
+                  <h1>Sending WhatsApp Messages</h1>
+                  <br>
+                  <h2> Sending WhatsApp Message is very simple in PyWhatKit </h2>
+                </center>
+              </div>
+              <div class="row">
+                <div class="left">
+                  <script src="embedder.js?target=https%3A%2F%2Fgithub.com%2FAnkit404butfound%2FPyWhatKit%2Fblob%2Fmaster%2Fpywhatkit%2F__init__.py&style=night-owl&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
+                </div>
+                <div class="right">
+                  <p> This function is used to send WhatsApp messages to a particular number after a time given by the user. The tab_close parameter specifies that whether the previous tab should be closed or not after sending the message. </p>
+                </div> 
+              </div>
+            </div>
+            
+            </div> -->
          <br><br><br>
          <div class="fbody" style="background-color: transparent;">
             <footer class="footer">
