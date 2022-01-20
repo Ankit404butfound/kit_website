@@ -187,6 +187,22 @@ body{
     text-decoration: underline;
   }
 
+button{
+    background-color: #3586ff; /* Green */
+    border: 1px;
+    color: rgb(0, 0, 0);
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    -webkit-box-shadow: 0 0 3px #000;
+}
+
 .buddy{
    padding: 15%;
    
@@ -197,16 +213,22 @@ body{
    
 }
 
+.parameter-container{
+    margin-top: 5em;
+    font-size: 1.2em;
+    color: #000;
+}
+
 @media screen and (max-width: 640px){
     .buddy h1{
-        margin-top: 10%;
+        margin-top: 15%;
     }
     .buddy{
         padding: 5%;
     }
 
     .code-block h1{
-        margin-top: 10%;
+        margin-top: 15%;
     }
     .code-block{
         padding: 5%;

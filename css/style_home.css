@@ -463,9 +463,9 @@ footer {
         margin: 20px 0;
         font-size: 25px;
     }
-    .main-container{
+    /* .main-container{
         display: block;
-    }
+    } */
    
    
 }
@@ -481,8 +481,8 @@ footer {
         display: block;
         margin-top: 30%;
      } */
-     .main-container{
-        display: block;}
+     /* .main-container{
+        display: block;} */
         /* margin: 10%; */
         /* padding: 5px; */
         /* width: 100%; */
