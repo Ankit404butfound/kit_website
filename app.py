@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 import os
 
-app = Flask(__name__, template_folder='', static_url_path="")
+app = Flask(__name__, template_folder='')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 
