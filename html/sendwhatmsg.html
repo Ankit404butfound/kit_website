@@ -1,28 +1,129 @@
-<center>
-    <h1>Sending WhatsApp Messages</h1>
-    <br>
-    <h2> Sending WhatsApp Message is very simple in PyWhatKit </h2>
-</center>
-<div style="margin-top: 7%;">
-    <script src="embedder.js?target=https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py&style=night-owl&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on"></script>
-</div>
-<div class=parameter-container>
-    <h2>The following parameters can be passed</h2>
-    <br>
-    <ul style="margin-left: 20px;">
-        <li><b>Phone_num</b> [string]<i> (required)</i> : Phone number of the person you want to send the message to.</li>
-        <li><b>Message</b> [string]<i> (required)</i> : Message you want to send.</li>
-        <li><b>Time_hour</b> [int]<i> (required)</i>: Hour of the day you want to send the message.</li>
-        <li><b>Time_min</b> [int]<i> (required)</i>: Minute of the hour you want to send the message.</li>
-        <li><b>Wait_time</b> [int: 15]<i> (optional)</i>: Time taken by WhatsApp Web to load.</li>
-        <li><b>Tab_close</b> [bool: False]<i> (optional)</i>: Close the tab after sending message.</li>
-        <li><b>Close_time</b> [int: 3]<i> (optional)</i>: Time after which tab shall be closed.</li>
-    </ul>
-    <br><br>
-    <h2>The following are some common errors</h2>
-    <br>
-    <ul style="margin-left: 20px;">
-        <li><b>CountryCodeException</b>: Check if the phone number passed into the paramter has country code.</li>
-        <li><b>Message not getting delivered</b>: Check internet speed and increase wait_time to 30 or above CallTimeException - The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time.</li>
-    </ul>
-</div>
+
+                <center>
+                    <h1>Sending WhatsApp Messages</h1>
+                    <br>
+                    <h2> Sending WhatsApp Message is very simple in PyWhatKit </h2>
+                </center>
+                <div style="margin-top: 7%;">
+                    <script src="embedder.js?target=https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py&amp;style=night-owl&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showCopy=on&amp;fetchFromJsDelivr=on"></script>
+<style>.lds-ring{margin:1rem auto;position:relative;width:60px;height:60px}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:48px;height:48px;margin:6px;border:6px solid #fff;border-radius:50%;animation:lds-ring 1.2s cubic-bezier(0.5,0,0.5,1) infinite;border-color:#888 transparent transparent transparent}.lds-ring div:nth-child(1){animation-delay:-.45s}.lds-ring div:nth-child(2){animation-delay:-.3s}.lds-ring div:nth-child(3){animation-delay:-.15s}@keyframes lds-ring{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}</style>
+<div id="5njxujs7naw" class="emgithub-container" style="margin: 1em 0px;"><div class="toolbar"><a class="copy-btn copy-btn-dark" href="javascript:void(0);">Copy</a></div><div style="white-space: pre; tab-size: 8;"><code class="py hljs python" style="padding: 1rem; border-radius: 0.3rem 0.3rem 0px 0px; border: 1px solid rgb(85, 85, 85);"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="1"><div class="hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="1"><span class="hljs-string"><span class="hljs-string">"""</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="2"><div class="hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="2"><span class="hljs-string">Version 5.2</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="3"><div class="hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="3"><span class="hljs-string">Status: Stable</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="4"><div class="hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="4"><span class="hljs-string">Documentation: https://github.com/Ankit404butfound/PyWhatKit/wiki</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="5"><div class="hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="5"><span class="hljs-string">Report Bugs and Feature Requests here: https://github.com/Ankit404butfound/PyWhatKit/issues</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="6"><div class="hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="6"><span class="hljs-string">For further Information, Join our Discord: https://discord.gg/62Yf5mushu</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="7"><div class="hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="7"><span class="hljs-string">"""</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="8"><div class="hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="8"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="9"><div class="hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="9"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="10"><div class="hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="10"><span class="hljs-comment"># Import the package</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="11"><div class="hljs-ln-n" data-line-number="11"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="11"><span class="hljs-keyword">import</span> pywhatkit</td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="12"><div class="hljs-ln-n" data-line-number="12"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="12"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="13"><div class="hljs-ln-n" data-line-number="13"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="13"><span class="hljs-comment"># Send a message</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="14"><div class="hljs-ln-n" data-line-number="14"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="14">pywhatkit.sendwhatmsg(<span class="hljs-string">"+918098989898"</span>, <span class="hljs-string">"Hello World"</span>, <span class="hljs-number">10</span>, <span class="hljs-number">30</span>)</td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="15"><div class="hljs-ln-n" data-line-number="15"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="15">phone_no: str, message: str, time_hour: int, time_min: int, wait_time: int = <span class="hljs-number">15</span>, tab_close: bool = <span class="hljs-literal">False</span>, close_time: int = <span class="hljs-number">3</span></td></tr></tbody></table></code></div><div class="file-meta file-meta-dark" style="border-width: 0px 1px 1px; border-top-style: initial; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: initial; border-right-color: rgb(85, 85, 85); border-bottom-color: rgb(85, 85, 85); border-left-color: rgb(85, 85, 85); border-image: initial;"><a target="_blank" href="https://raw.githubusercontent.com/Ankit404butfound/kit_website/main/example/sendwhatmsg.py" style="float:right">view raw</a>
+<a target="_blank" href="https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py">sendwhatmsg.py</a>
+delivered <span class="hide-in-phone">with ❤ </span>by <a target="_blank" href="file://">EmGithub</a></div></div>
+<style>.hljs-ln-numbers{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-align:right;color:#ccc;vertical-align:top}.hljs-ln td.hljs-ln-numbers{padding-right:1.25rem}</style>
+<link rel="stylesheet" href="night_owl.min.css">
+<style>
+.emgithub-container .file-meta {
+  padding: 0.75rem;
+  border-radius: 0 0 0.3rem 0.3rem;
+  font: 12px -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.emgithub-container .file-meta-light {
+  color: #586069;
+  background-color: #f7f7f7;
+}
+
+.emgithub-container .file-meta-dark {
+  color: #f7f7f7;
+  background-color: #586069;
+}
+
+.emgithub-container .file-meta a {
+  font-weight: 600;
+  text-decoration: none;
+  border: 0;
+}
+
+.emgithub-container .file-meta-light a {
+  color: #666;
+}
+
+.emgithub-container .file-meta-dark a {
+  color: #fff;
+}
+
+/* hide content for small device */
+@media (max-width: 575.98px) {
+  .emgithub-container .hide-in-phone {
+    display: none;
+  }
+}
+
+.emgithub-container {
+  position: relative;
+}
+
+.emgithub-container .toolbar {
+  position: absolute;
+  right: 0px;
+  padding: 0.3rem;
+}
+
+.emgithub-container .copy-btn {
+  display: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.4rem;
+  font: bold 1em monospace;
+  text-decoration: none;
+}
+
+.emgithub-container .copy-btn-light {
+  color: #586069;
+  background-color: #f7f7f7;
+}
+
+.emgithub-container .copy-btn-dark {
+  color: #f7f7f7;
+  background-color: #586069;
+}
+
+.emgithub-container:hover .copy-btn {
+  display: block;
+}
+
+.emgithub-container .copy-btn-light:hover {
+  color: #f7f7f7;
+  background-color: #586069;
+}
+
+.emgithub-container .copy-btn-dark:hover {
+  color: #586069;
+  background-color: #f7f7f7;
+}
+
+.emgithub-container .copy-btn-light:active {
+  /* darken #586069 by 20% https://www.cssfontstack.com/oldsites/hexcolortool/ */
+  background-color: #252d36;
+}
+
+.emgithub-container .copy-btn-dark:active {
+  /* darken #f7f7f7 by 20% */
+  background-color: #c4c4c4;
+}
+</style>
+
+                </div>
+                <div class="parameter-container">
+                    <h2>The following parameters can be passed</h2>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><b>Phone_num</b> [string]<i> (required)</i> : Phone number of the person you want to send the message to.</li>
+                        <li><b>Message</b> [string]<i> (required)</i> : Message you want to send.</li>
+                        <li><b>Time_hour</b> [int]<i> (required)</i>: Hour of the day you want to send the message.</li>
+                        <li><b>Time_min</b> [int]<i> (required)</i>: Minute of the hour you want to send the message.</li>
+                        <li><b>Wait_time</b> [int: 15]<i> (optional)</i>: Time taken by WhatsApp Web to load.</li>
+                        <li><b>Tab_close</b> [bool: False]<i> (optional)</i>: Close the tab after sending message.</li>
+                        <li><b>Close_time</b> [int: 3]<i> (optional)</i>: Time after which tab shall be closed.</li>
+                    </ul>
+                    <br><br>
+                    <h2>The following are some common errors</h2>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><b>CountryCodeException</b>: Check if the phone number passed into the paramter has country code.</li>
+                        <li><b>Message not getting delivered</b>: Check internet speed and increase wait_time to 30 or above CallTimeException - The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time.</li>
+                    </ul>
+                </div>
+            
