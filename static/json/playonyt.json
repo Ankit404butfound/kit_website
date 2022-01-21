@@ -1,6 +1,6 @@
 {
     "title": "Playing YouTube Videos",
-    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/playonyt.py",
     "description": "Play any youtube video using the following command",
     "func_info": [
         ["Topic", "string", "required", "Name of the video you want to play."],

@@ -13,10 +13,7 @@ This code is written by Ankit404butfound and published on GitHub.
 # Import the package
 import pywhatkit
 
-# Send a message
-pywhatkit.sendwhatmsg("+918098989898", "Hello World", 10, 30)
-
-# These are the parameters
-# phone_no: str, message: str, time_hour: int, time_min: int, wait_time: int = 15, tab_close: bool = False, close_time: int = 3
+# Passing the desired parameters
+pywhatkit.playonyt("PyWhatKit")
 
 # End of the script
