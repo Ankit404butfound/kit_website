@@ -206,7 +206,7 @@ body{
     }
 
     .code-block h1{
-        margin-top: 10%;
+        margin-top: 30%;
     }
     .code-block{
         padding: 5%;
@@ -418,7 +418,7 @@ footer {
 @media (max-width: 500px) {
     
     .buddy h1{
-        margin-top: 30%;
+        margin-top: 50%;
      }
 
      .code-block h1{

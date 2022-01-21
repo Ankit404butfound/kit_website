@@ -1,0 +1,15 @@
+{
+    "title": "Playing YouTube Videos",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py",
+    "description": "Play any youtube video using the following command",
+    "func_info": [
+        ["Topic", "string", "required", "Name of the video you want to play."],
+        ["Use_api", "bool", "optional", "Use the API instead of scrapping YouTube locally."],
+        ["Open_video", "bool", "optional", "If set to false, only video url will be returned without opening the video."]
+    ],
+    "error_info": [
+        ["Video not opening", "Make sure the topic exists or you have provided proper spelling."]
+    ],
+    "next_function": "/",
+    "previous_function": "sendwhatmsg"
+}

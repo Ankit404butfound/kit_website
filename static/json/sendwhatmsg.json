@@ -1,0 +1,21 @@
+{
+    "title": "Sending WhatsApp Messages",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py",
+    "description": "Sending WhatsApp Message is very simple in PyWhatKit",
+    "func_info": [
+        ["Phone_no", "string", "required", "Phone number of the target."],
+        ["Message", "string", "required", "Message you want to send."],
+        ["Time_hour", "int", "required", "Hour of the day you want to send the message."],
+        ["Time_min", "int", "required", "Minute of the hour you want to send the message."],
+        ["Wait_time","int: 1", "optional", "Time taken by WhatsApp Web to load."],
+        ["Tab_close", "bool: False", "optional", "Close the tab after sending message."],
+        ["Close_time", "int: 3", "optional", "Time after which tab shall be closed."]
+    ],
+    "error_info": [
+        ["CountryCodeException", "Check if the phone number passed into the paramter has country code."],
+        ["Message not getting delivered", "Check internet speed and increase wait_time to 30 or above."],
+        ["CallTimeException", "The web takes some time to load so some delay is required, make sure the seconds left is greater than the wait_time."]
+    ],
+    "next_function": "playonyt",
+    "previous_function": "/"
+}

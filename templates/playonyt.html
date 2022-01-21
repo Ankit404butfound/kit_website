@@ -1,0 +1,45 @@
+{%
+    title = function_information["title"]
+    description = function_information["description"]
+    func_info = function_information["function_info"]
+    error_info = function_information["error_info"]
+    next_function = function_information["next_function"]
+%}
+<style>
+    li{
+        margin-top: 0.5em;
+    }
+
+</style>
+<center>
+    <h1>{{title}}</h1>
+    <br>
+    <h2>{{description}}</h2>
+</center>
+<div style="margin-top: 7%;">
+    <script src="static/js/embedder.js?target=https://github.com/Ankit404butfound/kit_website/blob/main/example/sendwhatmsg.py&style=night-owl&showBorder=on&showLineNumbers=on&showFileMeta=on&showCopy=on&fetchFromJsDelivr=on')"></script>
+</div>
+<div class=parameter-container>
+    <h2>The following parameters can be passed</h2>
+    <br>
+    <ul style="margin-left: 20px;">
+    {% for function, arg_type, req, func_description in func_info %}
+        <li><b>{{function}}</b> [{{arg_type}}]<i> ({{req}})</i>: {{func_description}}</li>
+    {% endfor %}
+    </ul>
+    <br><br>
+    <h2>The following are some common errors</h2>
+    <br>
+    <ul style="margin-left: 20px;">
+    {% for error_type, error_description in error_info %}
+        <li><b>{{error_type}}</b>: {{error_description}}</li>
+    {% endfor %}
+    </ul>
+</div>
+<br><br>
+<div style="display:inline;">
+    <button data-inline="true">Previous</button>
+</div>
+<div style="display:inline; float: right;">
+    <button data-inline="true" onclick="location.href='{{next_function}}'">Next</button>
+</div>

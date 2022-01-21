@@ -2,6 +2,7 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8">
+      <title>{{title}}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="{{ url_for('static', filename='./css/style_code.css') }}">
       <link rel="stylesheet" href="{{ url_for('static', filename='./css/footer.css') }}">
@@ -18,7 +19,7 @@
       <nav class="navbar">
          <div class="max-width">
             <div class="logo">
-               <a href="#">
+               <a href="/">
                <img src="https://github.com/Ankit404butfound/PyWhatKit/raw/master/Images/logo.png" alt="logo">
                </a>
             </div>
@@ -104,15 +105,10 @@
                     </ul>
                 </div> -->
                 {{code_to_insert|safe}}
-            </div>
-            <br><br>
-            <div style="display:inline;">
-                <button data-inline="true">Previous</button>
-            </div>
-            <div style="display:inline; float: right;">
-                <button data-inline="true" onclick="loadDoc()">Next</button>
-            </div>       
-          </div>
+            
+            
+         </div>
+         </div>
          <!-- </div> -->
          <!-- <div class="daddy">
             <div class="container">
