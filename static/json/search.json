@@ -1,0 +1,13 @@
+{
+    "title": "Making Google Search",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/search.py",
+    "description": "Search any keyword on Google",
+    "func_info": [
+        ["Topic", "string", "required", "Term you want to search."]
+    ],
+    "error_info": [
+        ["Syntax-error", "Make sure the you have provided proper spelling and correct syntax."]
+    ],
+    "next_function": "info",
+    "previous_function": "playonyt"
+}

@@ -10,6 +10,6 @@
     "error_info": [
         ["Video not opening", "Make sure the topic exists or you have provided proper spelling."]
     ],
-    "next_function": "/",
+    "next_function": "search",
     "previous_function": "sendwhatmsg"
 }

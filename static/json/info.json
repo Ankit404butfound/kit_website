@@ -1,0 +1,14 @@
+{
+    "title": "Getting information of particular Term",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/info.py",
+    "description": "Get Wikipedia information of particular Term using the wiki API",
+    "func_info": [
+        ["Topic", "string", "required", "Term you want to get information about."],
+        ["Lines", "int: 3", "optional", "Number of lines of output you want."]
+    ],
+    "error_info": [
+        ["Not returning paragraph", "Make sure the topic exists and you are providing specific title"]
+    ],
+    "next_function": "image_to_ascii_art",
+    "previous_function": "search"
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Converting text to hand written characters",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/image_to_ascii_art.py",
+    "description": "This function can be used to convert text to hand written characters, the character sets has been written by me",
+    "func_info": [
+        ["Imgpath", "string", "required", "Path to the image that you want to convert"],
+        ["Output_file", "string: pywhatkit_asciiart.txt", "optional", "File where you want to save the output characters"]
+    ],
+    "error_info": [
+        ["Not returning paragraph", "Make sure the topic exists and you are providing specific title"]
+    ],
+    "next_function": "/",
+    "previous_function": "image_to_ascii_art"
+}

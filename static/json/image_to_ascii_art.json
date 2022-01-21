@@ -1,0 +1,14 @@
+{
+    "title": "Converting image to ascii art",
+    "url": "https://github.com/Ankit404butfound/kit_website/blob/main/example/image_to_ascii_art.py",
+    "description": "Converting any image to ascii art using python",
+    "func_info": [
+        ["Imgpath", "string", "required", "Path to the image that you want to convert"],
+        ["Output_file", "string: pywhatkit_asciiart.txt", "optional", "File where you want to save the output characters"]
+    ],
+    "error_info": [
+        ["File not found", "Make sure that the path of the image is valid"]
+    ],
+    "next_function": "text_to_handwriting",
+    "previous_function": "info"
+}
